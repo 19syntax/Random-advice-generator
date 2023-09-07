@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+}
+.container{
+    background-color: hsl(217, 19%, 24%);
+    color: white;
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Manrope', sans-serif;
+    padding: 3em 4em ;
+    text-align: center;
+    border-radius: 10px;
+}
+.advice-id{
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+} 
+.advice-content{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.divider-pattern{
+    width: 100%;
+    margin: 2em 0;
+}
+.div-dice{
+    width: 60px;
+    height: 60px;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    left: 44%;
+    right: 44%;
+    bottom: -27px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.div-dice:hover{
+    box-shadow: 2px 2px 30px hsl(150, 100%, 66%),
+    -2px -2px 30px hsl(150, 100%, 66%);
+}
+.dice{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+@media(max-width: 499px){
+    .container{
+        padding: 2em;
+    }
+    .advice-id{
+        font-size: 0.5em;
+    }
+    .advice-content{
+        font-size: 1em;
+    }
+}
